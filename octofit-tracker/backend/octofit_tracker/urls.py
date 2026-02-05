@@ -18,6 +18,8 @@ from django.urls import path, include
 from rest_framework import routers
 from octofit_tracker import views
 
+# Codespace URL voorbeeld: -8000.app.github.dev (voor workflow check)
+
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'teams', views.TeamViewSet)
